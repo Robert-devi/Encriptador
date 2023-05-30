@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>encriptador de texto</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="encripter">
+      <div class="encriptar">
         <textarea
-          name="exto"
-          id="texto"
+          name="texto"
           class="texto"
+          id="texto"
           cols="30"
           rows="10"
-          placeholder="Ingresar texto aqui"
-        >
-        </textarea>
+          placeholder="Ingresa el texto aquí"
+        ></textarea>
+
         <div class="terminos">
-          <p>Solo letras minusculas y sin acentos</p>
+          <p>Solo letras minúsculas y sin acentos.</p>
         </div>
         <div class="botones">
           <button class="btn-encriptar" type="button" onclick="encriptar()">
@@ -35,22 +37,15 @@
         </div>
       </div>
       <div class="encriptado">
-        <img src="" alt="" id="cosito" />
+        <img src="img/muñeco.png" alt="" id="muñeco" />
         <div class="mensaje-encriptado" id="mensaje-encriptado">
-          <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+          <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
           <p id="parrafo">
-            Ingrese el texto que desees encriptar o desencriptar
+            Ingresa el texto que deseas encriptar o desencriptar
           </p>
-          <textarea
-            name="mensaje"
-            id="mensaje"
-            cols="30"
-            rows="10"
-            class="mensaje"
-          ></textarea>
         </div>
       </div>
     </div>
   </body>
-  <script src="./index.js"></script>
+  <script src="index.js"></script>
 </html>
